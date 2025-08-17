@@ -2,7 +2,6 @@
 import HeroSection from "@/components/hero-section";
 import Marquee from "@/components/marquee";
 import React from "react";
-// import dynamic from "next/dynamic";
 import FAQ from "@/components/faq";
 import Testimonials from "@/components/testimonials";
 import InfiniteScrollText from "@/components/InfiniteScrollText";
@@ -11,8 +10,6 @@ import AboutSection from "@/components/AboutSection";
 import Projects from "@/components/Projects";
 import InfiniteScrollTextWhite from "@/components/InfiniteScrollTextWhite";
 import { Map } from "@/components/index";
-
-// const Map = dynamic(() => import("../components/map"), { ssr: false });
 
 export default function page() {
   const mapCenter = { lat: 6.4663, lng: 3.6015 }; // Ajah
