@@ -25,7 +25,7 @@ export default function HeroSection() {
         <Wrapper className="flex flex-col gap-6 text-center items-center w-full">
           {/* Hero Text */}
           <div className="bg-brand h-2 w-8"></div>
-          <h4 className="px-4 font-bold text-white text-[40px] sm:text-[72px] md:text-[80px] lg:text-[100px] xl:text-[120px] uppercase leading-normal sm:leading-tight max-w-6xl">
+          <h4 className="px-4 font-bold text-white text-[44px] sm:text-[72px] md:text-[80px] lg:text-[100px] xl:text-[120px] uppercase leading-tight sm:leading-tight max-w-6xl">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

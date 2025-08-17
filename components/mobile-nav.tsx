@@ -33,7 +33,7 @@ export default function MobileNav() {
                   transition={{ delay: 0.2 + index * 0.1 }}
                 >
                   <Link
-                    className="text-white text-md tracking-widest font-italiana uppercase hover:text-orange-500 transition duration-200 block py-2"
+                    className="text-white text-md tracking-widest uppercase hover:text-orange-500 transition duration-200 block py-2"
                     href={item.link}
                     onClick={() => close()}
                   >

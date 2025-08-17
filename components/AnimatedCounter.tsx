@@ -18,7 +18,7 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   duration = 2,
 }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.3,
   });
 

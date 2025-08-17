@@ -24,10 +24,10 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className={`fixed top-4 left-4 right-4 h-[12vh] flex items-center z-50 transition-all duration-300
+        className={`fixed top-2 left-2 right-2 h-[12vh] flex items-center z-50 transition-all duration-300
         ${
           isScrolled
-            ? "backdrop-blur-md border border-white/20 rounded-2xl shadow-lg"
+            ? "backdrop-blur-md border border-white/20 rounded-xl shadow-lg"
             : ""
         }
       `}
