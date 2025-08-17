@@ -10,9 +10,7 @@ const ResponsiveVideo: React.FC<ResponsiveVideoProps> = ({
   title = "Video",
 }) => {
   return (
-    <div className="relative w-full pt-[56.25%]">
-      {" "}
-      {/* 16:9 aspect ratio */}
+    <div className="relative w-full pt-[40%]">
       <iframe
         src={videoUrl}
         title={title}

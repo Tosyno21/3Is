@@ -19,10 +19,10 @@ export default function ContactPage() {
           {/* left side */}
           <div className="space-y-8 md:w-1/2">
             <div>
-              <h4 className="text-h5 font-semibold mb-4 lg:text-h4">
+              <h4 className="text-2xl lg:text-3xl font-semibold mb-4">
                 Let’s talk.
               </h4>
-              <p className="text-main text-sub lg:max-w-[500px] font-light">
+              <p className="text-main lg:max-w-[500px] font-light">
                 If you have any questions about the subscription or are not sure
                 which plan is right for you, contact our team and let’s schedule
                 a call.

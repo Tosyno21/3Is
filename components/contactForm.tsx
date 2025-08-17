@@ -15,10 +15,12 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="flex flex-col gap-8 w-full md:w-1/2 md:gap-6 lg:w-1/3"
       >
-        <h4 className="text-h5 font-semibold lg:text-h4">Contact Form</h4>
+        <h4 className="text-xl lg:text-2xl font-semibold max-md:mt-6">
+          Contact Form
+        </h4>
         {/* name input */}
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="text-heading font-normal">
+          <label htmlFor="name" className="">
             Full Name
           </label>
           <input
@@ -26,7 +28,7 @@ export default function ContactForm() {
             type="text"
             name="name"
             placeholder="Enter your name here"
-            className="rounded focus:outline-accent p-2 placeholder:text-sub placeholder:font-light border-[1.8px] border-sub"
+            className="rounded focus:outline-brand/50 p-2 placeholder:text-gray-300 placeholder:font-light border-[1.8px] border-gray-400"
           />
           <ValidationError prefix="name" field="text" errors={state.errors} />
         </div>
@@ -40,7 +42,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             placeholder="Enter your email address here"
-            className="rounded focus:outline-accent p-2 placeholder:text-sub placeholder:font-light border-[1.8px] border-sub"
+            className="rounded focus:outline-brand/50 p-2 placeholder:text-gray-300 placeholder:font-light border-[1.8px] border-gray-400"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -53,7 +55,7 @@ export default function ContactForm() {
             id="message"
             name="message"
             placeholder="Enter your message here"
-            className="rounded focus:outline-accent p-2 placeholder:text-sub placeholder:font-light border-[1.8px] border-sub h-36"
+            className="rounded focus:outline-brand/50 p-2 placeholder:text-gray-300 placeholder:font-light border-[1.8px] border-gray-400 h-36"
           />
           <ValidationError
             prefix="Message"
