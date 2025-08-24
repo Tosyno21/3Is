@@ -7,9 +7,9 @@ import { BsInstagram, BsLinkedin, BsTiktok, BsTwitterX } from "react-icons/bs";
 const teamMembers = [
   {
     name: "Emmanuel Uka",
-    role: "Chief Executive Officer",
+    role: "Director, Brand Strategy & Operations",
     src: "/uka.jpg",
-    alt: "CEO",
+    alt: "Director",
     socials: {
       linkedin: "",
       instagram: "",
@@ -18,10 +18,10 @@ const teamMembers = [
     },
   },
   {
-    name: "John Doe",
-    role: "Chief Operating Officer",
+    name: "Nonso Iwuh",
+    role: "Director, Project Development",
     src: "/precious.jpeg",
-    alt: "COO",
+    alt: "Director",
     socials: {
       linkedin: "",
       instagram: "",
@@ -30,22 +30,10 @@ const teamMembers = [
     },
   },
   {
-    name: "John Doe",
-    role: "Creative Director",
+    name: "Nneka Chukwudi",
+    role: "Brand Manager",
     src: "/lynda.jpg",
-    alt: "Creative Director",
-    socials: {
-      linkedin: "",
-      instagram: "",
-      twitter: "",
-      tiktok: "",
-    },
-  },
-  {
-    name: "John Doe",
-    role: "Lead Developer",
-    src: "/rita.jpeg",
-    alt: "Lead Developer",
+    alt: "Brand Manager",
     socials: {
       linkedin: "",
       instagram: "",
@@ -78,7 +66,7 @@ export default function OurTeam() {
                 <h5 className="font-semibold text-xl  xl:text-2xl">
                   {member.name}
                 </h5>
-                <p className="text-[#13a487] text-md sm:text-lg lg:2xl">
+                <p className="text-tittle text-md sm:text-lg lg:2xl">
                   {member.role}
                 </p>
                 {/* Socials */}

@@ -7,33 +7,31 @@ export default function AboutSection() {
     <div className="section-custom bg-background-dark">
       <div className="section-center flex flex-col items-center justify-center gap-16 lg:flex-row">
         {/* left side */}
-        <div className="space-y-4 lg:space-y-8 w-fit">
-          <h3 className="font-semibold text-white text-center uppercase text-2xl lg:text-right md:text-3xl">
-            We cover diverse career paths, industries and management levels
+        <div className="space-y-4 lg:space-y-6 w-fit">
+          <h3 className="font-semibold text-white text-center uppercase text-xl sm:text-2xl lg:text-right">
+            Who We Are
           </h3>
-          <p className="md:text-lg xl:text-xl leading-normal text-white text-center lg:text-right">
-            Our consulting services and LinkedIn Masterclasses are tailored to
-            support professionals at all hierarchical levels - fresh graduates,
-            early to mid-career professionals, C-Suite executives and business
-            entrepreneurs across various industries.
+          <p className="font-light text-sm sm:text-base md:text-lg leading-normal text-white text-center lg:text-right">
+            III, pronounced as 3Is, is an innovative, creative events and
+            marketing agency. Our name, Image, Impression, and Inbound, reflect
+            our mission to craft bold, compelling stories that connect brands
+            with their audience and drive real results. We specialise in
+            experiential marketing, event management, coordination, and
+            production, delivering immersive brand experiences through seamless
+            execution and standout storytelling. From experiential campaigns to
+            digital marketing and media strategy, we create SPIEL&apos;s
+            unconventional marketing ideas that inspire action, spark
+            engagement, and move the bottom line. At 3Is, we don’t just market;
+            we make your brand unforgettable. Let’s craft something
+            unforgettable together.
           </p>
           <div className="text-center pt-4 lg:text-right lg:pt-0">
-            <Button size={"xl"}>See Our Story</Button>
+            <Button size={"xl"}>See More</Button>
           </div>
         </div>
         {/* end of left side */}
         {/* right side */}
         <ResponsiveVideo videoUrl="https://www.youtube.com/embed/19g66ezsKAg" />
-
-        {/* <div className="relative w-full">
-          <iframe
-            src="https://www.youtube.com/embed/19g66ezsKAg"
-            allowFullScreen
-            title={"hero_video"}
-            allow="autoplay;"
-            className="absolute w-full rounded-lg shadow-lg"
-          />
-        </div> */}
         {/* end of right side */}
       </div>
     </div>

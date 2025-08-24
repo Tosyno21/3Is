@@ -6,10 +6,11 @@ import { cn } from "@/lib/utils";
 const badgeVariants = cva("inline-flex items-center rounded-lg  font-medium", {
   variants: {
     variant: {
-      default: "bg-primary-50 border-transparent text-primary-700",
-      warning: "bg-warning-25 border-transparent text-warning-500",
-      success: "bg-teal-100 border-transparent text-background-dark",
-      destructive: "bg-destructive-50 border-transparent text-destructive-500",
+      default: "bg-primary-50 border-transparent text-primary-700 uppercase",
+      warning: "bg-warning-25 border-transparent text-warning-500 uppercase",
+      success: "bg-teal-100 border-transparent text-background-dark uppercase",
+      destructive:
+        "bg-destructive-50 border-transparent text-destructive-500 uppercase",
       outline: "text-neutral-700 border-[1px]",
     },
     size: {

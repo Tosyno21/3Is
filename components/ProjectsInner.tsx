@@ -2,16 +2,15 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import { projectCard } from "@/constants/index";
+import { projectCardInner } from "@/constants/index";
 import { Button } from "./ui/button";
-import { HiArrowUpRight } from "react-icons/hi2";
 
 export default function OurProjects() {
   return (
-    <div className="section-custom">
+    <div className="section">
       <div className="section-center">
         <div className="grid-main">
-          {projectCard.map((project, index) => (
+          {projectCardInner.map((project, index) => (
             <div key={index} className="rounded-md bg-white shadow-md">
               <Image
                 src={project.src}
@@ -36,11 +35,6 @@ export default function OurProjects() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="pt-12 lg:pt-20 text-center">
-          <Button size={"lg"} href={"/projects"}>
-            View All Projects <HiArrowUpRight className="ml-4" />
-          </Button>
         </div>
       </div>
     </div>

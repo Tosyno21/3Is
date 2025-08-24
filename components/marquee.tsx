@@ -5,17 +5,11 @@ import { motion } from "framer-motion";
 
 const Marquee = () => {
   const images = [
-    { id: "1", link: "/01.svg" },
-    { id: "2", link: "/02.svg" },
-    { id: "3", link: "/03.svg" },
-    { id: "4", link: "/04.svg" },
-    // { id: "5", link: "/05.svg" },
-    // { id: "6", link: "/06.svg" },
-    // { id: "7", link: "/07.svg" },
-    // { id: "8", link: "/08.svg" },
-    // { id: "9", link: "/09.svg" },
-    // { id: "10", link: "/10.svg" },
-    // { id: "11", link: "/11.svg" },
+    { id: "1", link: "/bole-logo.png" },
+    { id: "2", link: "/burger.png" },
+    { id: "3", link: "/heoht.jpg" },
+    { id: "4", link: "/singleflow.jpg" },
+    { id: "5", link: "/lagos.jpg" },
   ];
 
   const ImageRow = () => (
@@ -33,7 +27,7 @@ const Marquee = () => {
             alt="marquee"
             width={200}
             height={200}
-            className="object-contain w-full h-full"
+            className="object-contain"
           />
         </div>
       ))}
@@ -41,7 +35,7 @@ const Marquee = () => {
   );
 
   return (
-    <div className="w-full overflow-hidden bg-background-dark py-0">
+    <div className="w-full overflow-hidden bg-background-dark py-20 lg:py-32">
       <motion.div
         className="flex w-max"
         animate={{ x: ["-50%", "0%"] }}

@@ -10,7 +10,7 @@ const ResponsiveVideo: React.FC<ResponsiveVideoProps> = ({
   title = "Video",
 }) => {
   return (
-    <div className="relative w-full pt-[40%]">
+    <div className="relative w-full pt-[30%] xl:pt-[35%]">
       <iframe
         src={videoUrl}
         title={title}

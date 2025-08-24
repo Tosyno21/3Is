@@ -31,21 +31,21 @@ export default function ContactPage() {
             <div className="space-y-8">
               <p className="flex items-center gap-4 font-normal text-neutral-800 lg:text-lg">
                 <HiPhone size={24} />
-                +23490666666666
+                +234-7065213348, +234-7059114973
               </p>
               <p className="flex items-center gap-4 font-normal text-neutral-800 lg:text-lg">
                 <HiEnvelope size={24} />
                 <Link
                   target={"_blank"}
-                  href={"mailto:hello@prestigeconsulting.com"}
+                  href={"mailto:uka.iinbound@gmail.com"}
                   className="cursor-pointer text-primary-500 underline"
                 >
-                  hello@3is.com
+                  uka.iinbound@gmail.com
                 </Link>
               </p>
               <p className="flex items-center gap-4 font-normal text-neutral-800 lg:text-lg">
                 <HiLocationMarker size={24} />
-                Lekki, Lagos
+                99 Opebi Road, Valley View Plaza, Ikeja, Lagos
               </p>
             </div>
           </div>

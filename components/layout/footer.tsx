@@ -28,18 +28,18 @@ export default function Footer() {
             <div className="flex flex-col gap-6">
               <p className="text-white flex items-center gap-4">
                 <HiLocationMarker size={24} />
-                Ajah, Lagos
+                99 Opebi Road, Valley View Plaza, Ikeja, Lagos
               </p>
               <p className="text-white flex items-center gap-4">
                 <HiPhone size={24} />
-                +2349066666666666
+                +234-7065213348, +234-7059114973
               </p>
               <Link
-                href={"mailto:hello@3is.com"}
+                href={"mailto:uka.iinbound@gmail.com"}
                 className="text-white flex items-center gap-4"
               >
                 <HiEnvelope size={24} />
-                hello@3is.com
+                uka.iinbound@gmail.com
               </Link>
             </div>
           </div>

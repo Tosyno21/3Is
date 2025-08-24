@@ -50,6 +50,9 @@
   --color-dark-gray-black: var(--color-dark-gray-black);
   --color-background-dark: var(--color-background-dark);
   --color-main: var(--color-main);
+  --color-primary-background: var(--color-primary-bg);
+  --color-tittle: var(--color-tittle);
+  --color-para: var(--color-para);
 }
 
 :root {
@@ -91,6 +94,9 @@
   --color-dark-gray-black: #0a0a0a;
   --color-background-dark: #030908;
   --color-main: #0f2c26;
+  --color-primary-bg: #e7eae9;
+  --color-tittle: #00916e;
+  --color-para: #605f5c;
 }
 
 .dark {
@@ -188,6 +194,12 @@ html {
   .section-custom {
     @apply px-4 md:px-6 lg:px-8 pt-4 pb-20 lg:pt-12 lg:pb-24;
   }
+  .tittle {
+    @apply uppercase text-lg md:text-2xl font-semibold;
+  }
+  .para {
+    @apply text-para text-base md:text-lg font-light leading-8;
+  }
 }
 
 .overlay {
@@ -220,4 +232,12 @@ html {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23311709' fill-opacity='0.01' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pattern2 {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23612F11' fill-opacity='0.01' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }

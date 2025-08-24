@@ -6,6 +6,8 @@ import { About_hero } from "@/public/images/index";
 import AboutSection from "@/components/AboutSection";
 import OurTeam from "@/components/OurTeam";
 import InfiniteScrollTextWhite from "@/components/InfiniteScrollTextWhite";
+import InfiniteScrollTextGreen from "@/components/InfiniteScrollTextGreen";
+import MissionVisionCulture from "@/components/MissionVisionCulture";
 
 export default function AboutPage() {
   const mapCenter = { lat: 6.4663, lng: 3.6015 }; // Ajah
@@ -14,6 +16,11 @@ export default function AboutPage() {
     <main>
       <InnerHero src={About_hero} alt={"About_us"} tittle={"About Us"} />
       <AboutSection />
+      <InfiniteScrollTextGreen
+        tittle1={"OUR"}
+        tittle2={"MISSION, VISION AND CULTURE"}
+      />
+      <MissionVisionCulture />
       <InfiniteScrollTextWhite tittle1={"OUR UNSUNG"} tittle2={"HEROES"} />
       <OurTeam />
       <InfiniteScrollText tittle1={"REAL STORIES"} tittle2={"REAL SUCCESS"} />

@@ -58,7 +58,6 @@ export const projectCard = [
     alt: "stage1",
     tittle: "Free Consultation",
     sub: "Book a free 10-minute pre-assessment to discover how our consulting services or masterclasses can meet help you achieve your specific growth need",
-    buttonText: "Book Now",
     link: "",
   },
   {
@@ -67,7 +66,6 @@ export const projectCard = [
     alt: "stage1",
     tittle: "Sign Up",
     sub: "Paid Registration for either the LinkedIn Foundation Class or the Prestige Consulting LinkedIn Masterclass, depending on your career or business",
-    buttonText: "Register now",
     link: "/packages",
   },
   {
@@ -76,7 +74,25 @@ export const projectCard = [
     alt: "stage1",
     tittle: "Training",
     sub: "Participation in either the Intensive LinkedIn Foundation Class or the Career LinkedIn Masterclass to build your brand and give you the competitive edge",
-    buttonText: "Register now",
+    link: "/packages",
+  },
+];
+
+export const projectCardInner = [
+  {
+    badgeText: "Product",
+    src: "/Consultation_1.jpg",
+    alt: "stage1",
+    tittle: "Free Consultation",
+    sub: "Book a free 10-minute pre-assessment to discover how our consulting services or masterclasses can meet help you achieve your specific growth need",
+    link: "",
+  },
+  {
+    badgeText: "Design",
+    src: "/Consultation_1.jpg",
+    alt: "stage1",
+    tittle: "Sign Up",
+    sub: "Paid Registration for either the LinkedIn Foundation Class or the Prestige Consulting LinkedIn Masterclass, depending on your career or business",
     link: "/packages",
   },
   {
@@ -85,7 +101,30 @@ export const projectCard = [
     alt: "stage1",
     tittle: "Training",
     sub: "Participation in either the Intensive LinkedIn Foundation Class or the Career LinkedIn Masterclass to build your brand and give you the competitive edge",
-    buttonText: "Register now",
+    link: "/packages",
+  },
+  {
+    badgeText: "Marketing",
+    src: "/Consultation_1.jpg",
+    alt: "stage1",
+    tittle: "Training",
+    sub: "Participation in either the Intensive LinkedIn Foundation Class or the Career LinkedIn Masterclass to build your brand and give you the competitive edge",
+    link: "/packages",
+  },
+  {
+    badgeText: "Marketing",
+    src: "/Consultation_1.jpg",
+    alt: "stage1",
+    tittle: "Training",
+    sub: "Participation in either the Intensive LinkedIn Foundation Class or the Career LinkedIn Masterclass to build your brand and give you the competitive edge",
+    link: "/packages",
+  },
+  {
+    badgeText: "Marketing",
+    src: "/Consultation_1.jpg",
+    alt: "stage1",
+    tittle: "Training",
+    sub: "Participation in either the Intensive LinkedIn Foundation Class or the Career LinkedIn Masterclass to build your brand and give you the competitive edge",
     link: "/packages",
   },
 ];
