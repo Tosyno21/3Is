@@ -21,3 +21,9 @@ yarn-error.log*
 # IDE settings
 .vscode/
 .idea/
+
+# Large Files
+*.mp4
+*.psd
+*.zip
+large-assets/
