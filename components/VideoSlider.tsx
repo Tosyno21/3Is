@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, TouchEvent } from "react";
 
-const videos = ["/BKVid1.mp4", "/BKVid2.mp4"];
+const videos = ["/livespot-home.mp4", "/livespot-home.mp4"];
 
 export default function VideoSlider() {
   const [current, setCurrent] = useState(0);
