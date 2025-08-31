@@ -33,14 +33,14 @@ export default function page() {
         description={
           "We create immersive brand experiences that leave lasting impressions. From live events to interactive campaigns, our experiential strategies connect brands with audiences in memorable, meaningful ways, driving brand loyalty and positive impact on the bottom line"
         }
-        imageUrl={"/precious.jpeg"}
+        imageUrl={"/services/experimental marketing.jpg"}
       />
       <ServiceCardV2
         title={"DIGITAL MARKETING"}
         description={
           "We deploy creative and innovative digital marketing strategies that drive growth, customer acquisition, and brand visibility. By leveraging data-driven insights and cutting-edge tools, we create campaigns that resonate with audiences across multiple digital channels. From SEO to social media marketing and paid advertising, our approach ensures that each campaign aligns with your brand’s goals and delivers measurable results in customer engagement and acquisition."
         }
-        imageUrl={"/precious.jpeg"}
+        imageUrl={"/services/digital marketing.jpg"}
       />
       <div className="py-12 lg:py-20 text-center">
         <Button size={"lg"} href={"/services"}>

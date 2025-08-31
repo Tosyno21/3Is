@@ -15,8 +15,8 @@ export default function ServiceCardV2({
   imageUrl,
 }: ServiceCardProps) {
   return (
-    <section className="section bg-[#FEF1EA] pattern">
-      <div className="section-center flex items-center flex-col md:flex-row gap-6 w-full h-auto md:h-72 lg:h-100">
+    <section className="section-custom bg-[#FEF1EA] pattern">
+      <div className="section-center flex items-center flex-col md:flex-row gap-6 w-full h-auto md:h-72 lg:h-120">
         {/* Content Container */}
         <div className="flex-1 md:text-right">
           <h2 className="text-tittle tittle">{title}</h2>
@@ -28,7 +28,7 @@ export default function ServiceCardV2({
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover object-top rounded-lg"
+            className="object-cover rounded-lg"
             sizes="(max-width: 768px) 100vw,
                   (max-width: 1200px) 50vw,
                   25vw"

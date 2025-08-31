@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiX, HiOutlineMenuAlt4 } from "react-icons/hi";
 import { useMobileNav } from "@/hooks/use-mobile-nav";
 import { Button } from "./ui/button";
 
@@ -27,7 +27,7 @@ export default function HeaderActions() {
           {isOpen ? (
             <HiX className="size-8 text-white" />
           ) : (
-            <HiMenu className="size-8 text-white" />
+            <HiOutlineMenuAlt4 className="size-8 text-white" />
           )}
         </motion.div>
       </button>

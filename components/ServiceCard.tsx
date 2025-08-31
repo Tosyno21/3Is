@@ -16,14 +16,14 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <section className="section-custom">
-      <div className="section-center flex items-center flex-col md:flex-row gap-6 w-full h-auto md:h-72 lg:h-100">
+      <div className="section-center flex items-center flex-col md:flex-row gap-6 w-full h-auto md:h-72 lg:h-120">
         {/* Image Container */}
         <div className="relative w-full h-72 md:flex-1 md:h-full">
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover object-top rounded-lg"
+            className="object-cover rounded-lg"
             sizes="(max-width: 768px) 100vw,
                   (max-width: 1200px) 50vw,
                   25vw"
