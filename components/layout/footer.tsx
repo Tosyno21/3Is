@@ -15,7 +15,7 @@ import { Whitelogo } from "@/public/images";
 
 export default function Footer() {
   return (
-    <div className="bg-background-dark pt-16 px-4 md:px-6 lg:px-8 lg:pt-20">
+    <div className="bg-main pt-16 px-4 md:px-6 lg:px-8 lg:pt-20">
       <div className="container mx-auto flex flex-col gap-16 lg:gap-20 xl:gap-24">
         {/* top */}
         <div className="flex flex-col gap-16 justify-between items-start lg:flex-row">

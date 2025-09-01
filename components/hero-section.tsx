@@ -15,7 +15,7 @@ export default function HeroSection() {
           muted
           playsInline
         >
-          <source src="/livespot-home.mp4" type="video/mp4" />
+          <source src="/BKVid1.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0"></div>
       </div>
