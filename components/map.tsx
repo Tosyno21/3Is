@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
+type LatLng = {
+  lat: number;
+  lng: number;
+};
+
 type MapProps = {
-  center: {
-    lat: number;
-    lng: number;
-  };
+  center: LatLng;
   zoom?: number;
   height?: string;
   width?: string;
@@ -26,36 +28,37 @@ const Map: React.FC<MapProps> = ({
     null
   );
 
-  const containerStyle = {
-    width,
-    height,
-  };
+  const containerStyle = { width, height };
 
-  const onLoad = (mapInstance: google.maps.Map) => {
-    mapRef.current = mapInstance;
+  const handleMapLoad = (map: google.maps.Map) => {
+    mapRef.current = map;
 
-    if (showMarker && window.google?.maps?.marker) {
-      // Avoid duplicating the marker
-      if (!markerRef.current) {
-        markerRef.current = new google.maps.marker.AdvancedMarkerElement({
-          map: mapInstance,
-          position: center,
-          title: "Location",
-        });
-      }
+    if (!showMarker) return;
+
+    if (window.google?.maps?.marker && !markerRef.current) {
+      markerRef.current = new google.maps.marker.AdvancedMarkerElement({
+        map,
+        position: center,
+        title: "Selected Location",
+      });
     }
   };
 
   return (
     <LoadScript
       googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}
-      libraries={["marker"]} // ✅ Important for AdvancedMarkerElement
+      libraries={["marker"]}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={zoom}
-        onLoad={onLoad}
+        onLoad={handleMapLoad}
+        options={{
+          disableDefaultUI: false,
+          clickableIcons: false,
+          mapId: process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
+        }}
       />
     </LoadScript>
   );

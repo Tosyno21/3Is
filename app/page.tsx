@@ -9,14 +9,21 @@ import SocialProof from "@/components/socialProoof";
 import AboutSection from "@/components/AboutSection";
 import Projects from "@/components/Projects";
 import InfiniteScrollTextWhite from "@/components/InfiniteScrollTextWhite";
-import { Map } from "@/components/index";
 import { Button } from "@/components/ui/button";
 import { HiArrowUpRight } from "react-icons/hi2";
 import ServiceCard from "@/components/ServiceCard";
 import ServiceCardV2 from "@/components/ServiceCardV2";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("../components/map"), {
+  ssr: false, // Required to avoid `window is not defined` error
+});
 
 export default function page() {
-  const mapCenter = { lat: 6.4663, lng: 3.6015 }; // Ajah
+  const center = {
+    lat: 6.4663,
+    lng: 3.6015, // Ajah
+  };
   return (
     <main className="overflow-hidden">
       <HeroSection />
@@ -48,7 +55,7 @@ export default function page() {
         </Button>
       </div>
       {/* <Map /> */}
-      <Map center={mapCenter} zoom={15} height="500px" showMarker />
+      <Map center={center} showMarker zoom={12} />
       <InfiniteScrollText tittle1={"REAL STORIES"} tittle2={"REAL SUCCESS"} />
       <Testimonials />
       <InfiniteScrollTextWhite
