@@ -24,7 +24,7 @@ yarn-error.log*
 .idea/
 
 # Large Files
-*.mp4
-*.psd
-*.zip
-large-assets/
+# *.mp4
+# *.psd
+# *.zip
+# large-assets/
